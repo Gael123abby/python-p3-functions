@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 from functions import greet_programmer, greet, greet_with_default, \
                         add, halve
@@ -53,6 +52,7 @@ class TestAdd:
 
     def test_add(self):
         '''calculates 45 + 55 = 100'''
+        assert(add(45, 55) == 100)
 
 class TestHalve:
     '''function halve()'''
@@ -64,4 +64,4 @@ class TestHalve:
     def test_halve_float(self):
         '''halves float input'''
         assert(halve(99.0) == 49.5)
-
+lip_test.py
